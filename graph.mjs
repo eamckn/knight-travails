@@ -2,7 +2,7 @@ import Node from "./node.mjs";
 
 export default class Graph {
   constructor() {
-    this.squares = makeSquares();
+    this.squares = this.makeSquares();
   }
 
   makeSquares() {
@@ -12,5 +12,6 @@ export default class Graph {
         squares.push(new Node(row, col));
       }
     }
+    return squares;
   }
 }
