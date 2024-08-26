@@ -8,8 +8,9 @@ export default class Graph {
   makeSquares() {
     let squares = [];
     for (let row = 0; row < 8; row++) {
+      squares[row] = [];
       for (let col = 0; col < 8; col++) {
-        squares.push(new Node(row, col));
+        squares[row][col] = new Node(row, col);
       }
     }
     return squares;
